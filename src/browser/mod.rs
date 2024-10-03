@@ -31,9 +31,12 @@ pub use fetcher::FetcherOptions;
 #[cfg(feature = "fetch")]
 pub use fetcher::Revision;
 
+#[cfg(feature = "fetch")]
+pub use fetcher::Fetcher;
+
 pub mod context;
 #[cfg(feature = "fetch")]
-mod fetcher;
+pub mod fetcher;
 mod process;
 pub mod tab;
 pub mod transport;
